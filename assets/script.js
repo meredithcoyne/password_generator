@@ -14,7 +14,7 @@ function getPasswordOptions(userNumCharacters) {
   } else if (parseInt(userNumCharacters) < 8) {
     alert("Password length must be at least 8 characters.");
     return false;
-  } else if (parseInt(userNumCharacters) >= 128) {
+  } else if (parseInt(userNumCharacters) > 128) {
     alert("Password must be less than 129 characters.");
     return false;
   }
